@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <div>
+    <div>
+<label for ="Thutu"> Amount </label><br>
+    <input type ="text" id="amount" >
+    </div>
+<div>
+    <label> From Currency</label><br>
+    <select name ="Dia Diem" id ="from">
+    <option value ="usd">Hoa Ky</option>
+    <option value="vnd">VietNam </option>
+    </select>
+</div>
+<div>
+    <label>To Currency </label>
+    <select id ="to">
+        <option value ="usd">USD</option>
+        <option value ="vnd">VND</option>
+    </select>
+    <button onclick="abc()" >nutBam</button>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+</form>
+<script>
+    function abc(){
+        let res  =document.getElementById("amount").value;
+        let from = document.getElementById("from").value;
+        let to =document.getElementById("to").value;
+        if(from == to){
+            alert(res);
+        }
+        if(from=="vnd" && to=="usd"){
+            alert(res/23000);
+        }
+        if(from =="vnd" && to ="usd"){
+            alert(res*23000);
+        }
+
+
+
+    }
+
+</script>
+
+</body>
+</html>
