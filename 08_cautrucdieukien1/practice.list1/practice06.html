@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<label for ="soluongsanphambanra"></label>
-<input type="text" id ="soluongsanphambanra">
-<button onclick="sohoahong()" >So hoa hong duoc nhan :</button>
 <body>
+
 <script>
-    function sohoahong() {
-        let a = document.getElementById("soluongsanphambanra").value;
-
-        if (a >= 10) {
-            alert("Nhan duoc 2 phan tram hoa hong mot san pham ban ra");
-        } else {
-
-            if (a >= 20) {
-                alert("Nhan duoc 4 phan tram hoa hong tong san pham duoc ban ra");
-            } else  {
-                alert("Nhan duoc 10 phan tram hoa hong tong san pham duoc ban ra ");
-            }
-
-        }
+    const kiemhang = prompt("kiemhang");
+    if(kiemhang >=80&&kiemhang<150){
+        alert("Nhan duoc 4 phan tram tren mot san pham ban ra ");
+    }
+    else if (kiemhang>150&&kiemhang<250){
+        alert("Nhan duoc 10 phan tram tren mot san pham ban ra ");
+    }
+    else if (kiemhang>250&&kiemhang<400){
+        alert("Nhan duoc 15 phan tram tren mot san pham duoc ban ra ");
+    }
+    else {
+        alert("Nhan duoc 20 phan tram tren mot san pham duoc ban ra  ");
     }
 </script>
 
