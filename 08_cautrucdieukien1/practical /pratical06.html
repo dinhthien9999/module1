@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<label for ="soluongsanphambanra"></label>
+<input type="text" id ="soluongsanphambanra">
+<button onclick="sohoahong()" >So hoa hong duoc nhan :</button>
+<body>
+<script>
+    function sohoahong() {
+        let a = document.getElementById("soluongsanphambanra").value;
+
+        if (a >= 10) {
+            alert("Nhan duoc 2 phan tram hoa hong mot san pham ban ra");
+        } else {
+
+            if (a >= 20) {
+                alert("Nhan duoc 4 phan tram hoa hong tong san pham duoc ban ra");
+            } else  {
+                alert("Nhan duoc 10 phan tram hoa hong tong san pham duoc ban ra ");
+            }
+
+        }
+    }
+</script>
+
+
+</body>
+</html>
