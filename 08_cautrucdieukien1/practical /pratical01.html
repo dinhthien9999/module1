@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="a"></label>
+     <input type="text" id="a">
+            <label for="b"></label>
+
+<input type ="text" id ="b">
+<button onclick="kiemtra()">ketqua()</button>
+<script>
+    function kiemtra(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        if(Number(a) % Number(b)== 0){
+            alert("so a chia het cho so b");
+        }
+        else
+        {
+            alert("so a khong chia het cho so b");
+        }
+    }
+</script>
+</body>
+</html>
