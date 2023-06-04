@@ -6,24 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    th{
-        background-color: aqua;
-    }
-</style>
 <body>
-<h1>Tháng 10 - October</h1>
+<h2>Caculapor</h2>
 <table>
-    <tr>
-        <th class="cn">Chủ nhật</th>
-        <th>Thứ Hai</th>
-        <th>thứ ba</th>
-        <th>Thứ tư</th>
-        <th>Thứ năm</th>
-        <th>Thứ Sáu</th>
-        <th class="tb">Thứ bảy</th>
+    <th><input type="text" id="a"></th>
+    <th><input type="text" id="b"></th>
 
-    </tr>
 </table>
+<table>
+    <td><button onclick="cong()">Additon(+)</button></td>
+    <td><button onclick="tru()">Subtraction(-)</button></td>
+    <td><button onclick="nhan()">Multipcation(X)</button></td>
+    <td><button onclick="chia()">Additon(Divison(/))</button></td>
+</table>
+<p id="kq"></p>
+
+<script>
+    function cong(){
+        let a = document .getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let Result;
+        Result = Number(a) + Number(b);
+        document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+    }
+    function tru(){
+        let a = document .getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let Result;
+        Result = Number(a) - Number(b);
+        document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+    }
+    function nhan(){
+        let a = document .getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let Result;
+        Result = Number(a) * Number(b);
+        document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+    }
+    function chia(){
+        let a = document .getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let Result;
+        Result = Number(a) / Number(b);
+        document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+    }
+
+</script>
 </body>
 </html>

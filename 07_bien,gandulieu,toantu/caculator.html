@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>CACULATOR </h1>
+
+    <table>-
+    <th> <input type="number" id="a "></th>
+    <th> <input type="number" id="b"></th>
+</table>
+<table>
+    <td> <button onclick="phepcong()">Addition(+)</button></td>
+    <td> <button onclick="pheptru()">Subtraction(-)</button></td>
+    <td> <button onclick="phepnhan()">Multipcation(*)</button></td>
+    <td> <button onclick="phepchia()">Division(/)</button></td>
+</table>
+<p id="dapan"></p>
+
+<script>
+    function phepcong(){
+    let a =document.getElementById("a").value;
+    let b=document.getElementById("b").value;
+     let Result ;
+    Result = Number(a) + Number(b);
+    document.getElementById("dapan").innerHTML="ketqua"+ Result;
+
+    }
+    function pheptru(){
+        let a  = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let result;
+        result = Number(a) - Number(b);
+        document.getElementById("dapan").innerHTML="ketqua "+ result;
+    }
+    function  phepnhan(){
+        let a =document.getElementById("a").value;
+        let b =document.getElementById("b").value;
+        let Result;
+        Result = Number (a) * Number(b);
+        document.getElementById("dapan").innerHTML="ketqua"+ Result;
+    }
+    function phepchia(){
+        let a =document.getElementById("a").value;
+        let b=document.getElementById("b").value;
+        let Result;
+        Result = Number(a) / Number(b);
+        document.getElementById("dapan").innerHTML="ketqua"+ Result;
+    }
+
+</script>
+
+</body>
+</html>
