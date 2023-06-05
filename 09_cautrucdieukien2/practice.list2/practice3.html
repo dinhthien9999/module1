@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Tinh dien tich tam giac vuong </h1>
+<body>
+<label for="nhap chieu cao "></label>
+<input type="number" id ="nhap chieu cao ">
+<label for ="nhap chieu dai day "></label>
+<input type = "number" id ="nhap chieu dai day ">
+<button onclick ="tinhdientichtamgiacvuong()">tinhdientich</button>
+
+<script>
+  function tinhdientichtamgiacvuong(){
+    let a=document.getElementById("nhap chieu cao ").value;
+    let b = document.getElementById("nhap chieu dai day  ").value ;
+    if(a>0 && b>0){
+      result = 1/2 * (a*b);
+      alert("Dien tich tam giac vuong la :"+result);
+    }
+    else if(a<=0 ||b<=0){
+      alert("Khong hop le ");
+    }
+
+  }
+</script>
+</body>
+</html>

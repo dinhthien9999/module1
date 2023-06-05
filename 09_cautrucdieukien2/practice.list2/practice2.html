@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Tinh dien tich hinh chu nhat </h1>
+<body>
+<label for ="nhapchieurong"></label>
+<input type="number" id="nhapchieurong">
+<label for="nhapchieudai"></label>
+<input type="number" id ="nhapchieudai">
+<button onclick="Tinhdientichchunhat()">tinhdientich</button>
+<p id ="result "></p>
+<script>
+    function Tinhdientichchunhat (){
+        let a = document.getElementById("nhapchieurong").value;
+        let b = document.getElementById("nhapchieudai").value;
+        if(a>0 && b>0){
+            result= a*b
+            alert ("Dien tich cua hinh chu nhat  la :"+result);
+        }
+        else if(a<0 ||b<0) {
+            alert("Hinh nay khong phai la hinh chu nhat ");
+
+        }
+        else if (a ==b){
+            alert("Hinh nay la hinh vuong "+result);
+        }
+
+    }
+</script>
+</body>
+</html>

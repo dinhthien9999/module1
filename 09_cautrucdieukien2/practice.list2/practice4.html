@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Giai phuong trinh bac 1 </h1>
+<p>Phuong trinh co dang : x=ax+b</p>
+<label for ="nhapa">nhap a</label>
+<input type ="number" id ="nhapa">
+<label for ="nhapb"> nhap b</label>
+<input type ="number" id ="nhapb">
+<button onclick="tinhxem()">Giaipt</button>
+<script>
+    function tinhxem() {
+        let a = document.getElementById("nhapa").value;
+        let b =document.getElementById("nhapb").value;
+        if (a != 0) {
+            x = -b / a;
+            alert("Phuong trinh co mot nghiem la :" + x);
+        } else if (a == 0 && b != 0) {
+            alert("Phuong trinh vo nghiem ");
+        } else if (a == 0 && b == 0) {
+            alert("Phuong trinh co vo so nghiem ");
+        }
+    }
+
+</script>
+</body>
+</html>

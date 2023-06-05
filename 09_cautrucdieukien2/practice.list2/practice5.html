@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Giai phuong trinh bac hai </h1>
+<body>
+<p>Phuong trinh co dang (a*a) +bx+c</p>
+<label for ="nhapa">nhap a</label>
+<input type="number" id ="nhapa">
+<label for ="nhapb">nhap b</label>
+<input type ="number" id ="nhapb">
+<button onclick ="tinhgiatrix()">Giaipt</button>
+<p id="delta"></p>
+<script>
+    function tinhgiatrix(){
+        let a =document.getElementById("nhapa").value;
+        let b = document.getElementById("nhapb").value;
+         delta = b *b-4 * a *c
+        if(delta>0){
+            x1=(-b +Math.sqrt(delta)) /2 *a;
+            x2=(-b -Math.sqrt(delta)) /2 *a;
+            alert("Phuong trinh co nghiem thu nhat la :"+x1);
+            alert("Phuong trinh co nghiem thu hai la :"+x2);
+        }
+       else if(delta==0){
+            x = -b/2* a
+            alert("Phuong trinh co mot nghiem la : "+delta);
+        }
+       else if (delta<0){
+           alert("Phuong trinh vo nghiem ");
+        }
+
+
+    }
+</script>
+</body>
+</html>
