@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+<label for ="nhapsotuoi"></label>
+<input type="number" id ="nhapsotuoi">
+<button onclick="tinhtuoi()">tinhsotuoi</button>
+<script>
+    function tinhtuoi(){
+        let a = document.getElementById("nhapsotuoi").value;
+        if(a%1==0&&a>0){
+            alert("Day la tuoi cua mot nguoi ");
 
+        }
+        else {
+            alert("Khong phai tuoi cua mot nguoi");
+        }
+    }
+</script>
 </body>
 </html>

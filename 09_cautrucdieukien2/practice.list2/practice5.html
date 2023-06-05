@@ -11,13 +11,17 @@
 <input type="number" id ="nhapa">
 <label for ="nhapb">nhap b</label>
 <input type ="number" id ="nhapb">
+
+<label for ="nhapc">nhap c</label>
+<input type ="nhapc" id ="nhapc">
 <button onclick ="tinhgiatrix()">Giaipt</button>
 <p id="delta"></p>
 <script>
     function tinhgiatrix(){
         let a =document.getElementById("nhapa").value;
         let b = document.getElementById("nhapb").value;
-         delta = b *b-4 * a *c
+        let c = document.getElementById("nhapc").value;
+         delta = b*b-4*a*c;
         if(delta>0){
             x1=(-b +Math.sqrt(delta)) /2 *a;
             x2=(-b -Math.sqrt(delta)) /2 *a;
@@ -25,7 +29,7 @@
             alert("Phuong trinh co nghiem thu hai la :"+x2);
         }
        else if(delta==0){
-            x = -b/2* a
+            x = -b/2*a
             alert("Phuong trinh co mot nghiem la : "+delta);
         }
        else if (delta<0){

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for ="nhapcanha">nhap canh a </label>
+<input type="Number" id ="nhapcanha">
+<label for ="nhapcanhb">nhap canh b </label>
+<input type ="Number" id ="nhapcanhb">
+<label for="nhapcanhc">nhap canh c </label>
+<input type="number"id="nhapcanhc">
+<button onclick="kiemtrathu()">kiemtra</button>
+<script>
+    function kiemtrathu() {
+        let a = document.getElementById("nhapcanha").value;
+        let b = document.getElementById("nhapcanhb").value;
+        let c = document.getElementById("nhapcanhc").value;
+       if(a>0&&b>0&&c>0&&a+b>c){
+           alert("3 canh nay la canh cua mot tam giac ");
+       }
+       else if (a>0&&b>0&&c>0&&b+c>a){
+           alert("3 canh nay la canh cua mot tam giac ");
+        }
+       else if (a>0&&b>0&&c>0&&a+c>b){
+           alert("3 canh nay la canh cua mot tam giac ");
+       }
+       else{
+           alert("Khong phai la canh mot tam giac ")
+       }
+    }
+</script>
+</body>
+</html>
