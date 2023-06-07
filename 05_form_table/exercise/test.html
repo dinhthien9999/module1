@@ -7,50 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-<h2>Caculapor</h2>
-<table>
-    <th><input type="text" id="a"></th>
-    <th><input type="text" id="b"></th>
-
-</table>
-<table>
-    <td><button onclick="cong()">Additon(+)</button></td>
-    <td><button onclick="tru()">Subtraction(-)</button></td>
-    <td><button onclick="nhan()">Multipcation(X)</button></td>
-    <td><button onclick="chia()">Additon(Divison(/))</button></td>
-</table>
-<p id="kq"></p>
-
 <script>
-    function cong(){
-        let a = document .getElementById("a").value;
-        let b = document.getElementById("b").value;
-        let Result;
-        Result = Number(a) + Number(b);
-        document.getElementById("kq").innerHTML = "Ket qua: " + Result;
-    }
-    function tru(){
-        let a = document .getElementById("a").value;
-        let b = document.getElementById("b").value;
-        let Result;
-        Result = Number(a) - Number(b);
-        document.getElementById("kq").innerHTML = "Ket qua: " + Result;
-    }
-    function nhan(){
-        let a = document .getElementById("a").value;
-        let b = document.getElementById("b").value;
-        let Result;
-        Result = Number(a) * Number(b);
-        document.getElementById("kq").innerHTML = "Ket qua: " + Result;
-    }
-    function chia(){
-        let a = document .getElementById("a").value;
-        let b = document.getElementById("b").value;
-        let Result;
-        Result = Number(a) / Number(b);
-        document.getElementById("kq").innerHTML = "Ket qua: " + Result;
+    let tong=0;
+    let n=0
+    for(let i=0;i<1000;i++){
+        if(i%7==0){
+            n++;
+            tong=tong+i;
+
+
+        }
+        else if(i>29){
+            break;
+        }
+
     }
 
+    alert("Tong 30 so dau tien chia het cho 7 la :"+tong);
 </script>
 </body>
 </html>

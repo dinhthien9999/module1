@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tong =0;
+    let fibonaci;
+    let fb1=0;
+    let fb2=1;
+    for(let a =1;a<=20;a++){
+        fibonaci=fb1+fb2;
+        fb1=fb2;
+        fb2=fibonaci;
+        document.write(fibonaci)
+        tong += fibonaci
+    }
+    document.write("Tong la "+tong)
+</script>
+</body>
+</html>
