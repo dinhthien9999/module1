@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Chon kieu hinh de in </h1>
+<body>
+<button onclick ="hinhkieu1()">hinh1 </button>
+<button onclick="hinhkieu2()">hinh 2</button>
+<button onclick="hinhkieu3()">hinh 3</button>
+<button onclick="hinhkieu4()">hinh 4 </button>
+<script>
+  function hinhkieu1(){
+for ( let i=0;i<=5;i++){
+  for(let j =1;j<=i;j++){
+document.write("*");
+  }
+  document.write("<br>");
+}
+  }
+  function hinhkieu2(){
+    for(let i=1;i<=5;i++){
+      for (let j=1;j<=6-i;j++ ){
+        document.write("*");
+      }
+      document.write("<br>")
+    }
+  }
+  function hinhkieu3(){
+    for (let i =1;i<=5;i++){
+      for (j=1;j<=5;j++){
+        if(j<=5-i){
+          document.write("&nbsp&nbsp");
+        }else{
+          document.write("*")
+        }
+      }
+      document.write("<br>");
+    }
+  }
+  function hinhkieu4() {
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 1; j <= 5; j++) {
+        if (j <= i-1) {
+          document.write("&nbsp&nbsp");
+        } else {
+          document.write("*");
+        }
+      }
+      document.write("<br>")
+    }
+  }
+</script>
+</body>
+</html>

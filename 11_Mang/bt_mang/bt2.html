@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    const num=window.prompt();
+    const st = num.toString();
+    const kq = [st[0]];
+
+    for(let x=1; x<st.length; x++)
+    {
+        if((st[x-1]%2 === 0)&&(st[x]%2 === 0))
+        {
+            kq.push('-', st[x]);
+        }
+        else
+        {
+            kq.push(st[x]);
+        }
+    }
+    console.log(kq.join(''));
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var st = 'NguyenDinhThien';
+  var Upper ="ABCDEFGHIJKLMNOPQRTSUVWXYZ";
+  var Lower ="abcdefghiklmnopqrtsuvwxyz";
+  var kq = [];
+  for ( var x = 0 ; x<st.length;x++){
+    if(Upper.indexOf(st[x])!==-1){
+      kq.push(st[x].toLowerCase());
+    }
+    else if (Lower.indexOf(st[x])!==-1){
+      kq.push(st[x].toUpperCase());
+    }
+
+    else {
+      kq.push(st[x]);
+    }
+    console.log(kq.join(''));
+  }
+
+</script>
+
+</body>
+</html>

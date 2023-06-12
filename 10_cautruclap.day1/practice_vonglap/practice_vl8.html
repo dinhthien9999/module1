@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<h1>Hay thu doan xem !</h1>
 <body>
+<button onclick ="Choi()">PLAY </button>
+<script>
+  function Choi() {
 
+      let a = +prompt("nhap so thu nhat ");
+      let b = +prompt("nhap so thu hai ");
+      let d = (a+b)/2;
+      for (let i = 0 ; i<3;i++){
+          let c = prompt("nhap so ma ban du doan  " + a +"-"+b);
+          if (c==[a,b]){
+              continue;
+          }
+          else if(c == d ){
+              alert("ban da chon dung ");
+              break;
+          }else{
+              alert("Ban da nhap sai ");
+          }
+      }
+
+
+
+      }
+
+</script>
 </body>
 </html>
