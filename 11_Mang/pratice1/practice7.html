@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for = "nhapso">Nhap so V </label>
+<input id = "nhapso" type = "text">
+<label for ="nhapmang">Nhap mang :[</label>
+<input id ="nhapmang" type ="text">]
+<button onclick="Kiemtra()">Click me !</button>
+<script>
+    function Kiemtra() {
+        let V = document.getElementById("nhapso").value;
+        let a = document.getElementById("nhapmang").value;
+        let n = [];
+        let result = a.split(",")
+        for (let i = 0; i < result.length; i++) {
+            if(result[i] !== V){
+                n.push(result[i]);
+            }
+        }
+
+        alert(n.join(","));
+
+
+    }
+
+</script>
+</body>
+</html>

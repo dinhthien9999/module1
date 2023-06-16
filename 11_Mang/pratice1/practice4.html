@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for = nhapso>Mang=[</label>
+<input id = "nhapso" type ="text"> ]
+<button onclick ="nhandulieu()">ClickMe!</button>
+<script>
+    function nhandulieu(){
+
+        let a = document.getElementById("nhapso").value;
+        let newa=a.split(",").map(Number);
+        newa.reverse();
+        alert(newa);
+
+
+    }
+
+</script>
+
+</body>
+</html>
