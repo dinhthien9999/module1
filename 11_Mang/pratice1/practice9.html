@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="nhapmanga">A</label>
+<input id ="nhapmanga" type ="text">
+<label for ="nhapmangb">B</label>
+<input id ="nhapmangb" type ="text">
+<button  onclick="Chaymang()">Click me !</button>
+<script>
+    function Chaymang() {
+        let a = document.getElementById("nhapmanga").value;
+        let result = a.split(",");
+        let b = document.getElementById("nhapmangb").value;
+        let rs2 = b.split(",");
+        let c = a.concat(b);
+        alert(c);
+    }
+</script>
+
+</body>
+</html>

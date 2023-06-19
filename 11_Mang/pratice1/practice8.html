@@ -6,19 +6,15 @@
 </head>
 <body>
 
-<label for ="nhapmang">nhapMang</label>
-<input id ="nhapmang" type ="text">
-<button onclick="tinhtoan()">KiemTra</button>
-<script>
-    function tinhtoan() {
-        let a = document.getElementById("nhapmang").value;
-        let n =[];
-        let result = a.split(",");
 
-        for (let i = 0; i < result.length; i++) {
-            result.sort();
-        alert(result.sort());
-        }
+<script>
+    let songuyen = []
+    for(i = 0 ; i < 10 ; i++){
+        songuyen[i] = parseInt(prompt())
+        songuyen.sort(function(a, b){return a - b});
+    }
+    document.write(songuyen);
+</script>
     }
 
 
