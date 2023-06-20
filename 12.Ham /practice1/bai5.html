@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for ="nhapsao" >Star:</label>
+<input id ="nhapsao" type ="text">
+<button onclick ="find()">click me! </button>
+<p id ="result"> </p>
+<script>
+var stars=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'];
+var Constellation=['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor' , 'Leo'];
+function find(){
+    isExit = false;
+let star = document.getElementById("nhapsao").value;
+for(i=0;i<stars.length;i++){
+    if(stars[i]== star){
+
+        document.getElementById("result").innerHTML = "Chom sao tuong uong la :"+Constellation[i];
+        isExit== true;
+    }
+    else if(isExit==false) {
+        documents.getElementById("result").innerHTML ="Khong tim thays chom sao tuong ung ";
+    }
+}
+}
+
+</script>
+</body>
+</html>
