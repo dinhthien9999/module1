@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for ="nhapso">So cua ban :</label>
+<input type="text" id ="nhapso">
+<button onclick="kiemtra()">Click me !</button>
+<script>
+  function kiemtra(){
+    let number = document.getElementById("nhapso").value;
+    if(isNaN(number)){
+      alert("False");
+    }
+    else{
+      alert("True");
+    }
+  }
+</script>
+</body>
+</html>

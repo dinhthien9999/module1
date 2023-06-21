@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for ="nhapso">Nhap so :</label>
+<input id ="nhapso" type="text">
+<button onclick="Tinhtoan()">Click me !</button>
+<p id ="result:"> </p>
+
+<script>
+    function Tinhtoan() {
+        let a = document.getElementById("nhapso").value;
+        a = a *a;
+        alert(a);
+    }
+
+</script>
+</body>
+</html>

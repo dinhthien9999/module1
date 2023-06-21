@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id ="so1" type ="text">
+<input id ="so2" type="text">
+<input id ="so3" type="text">
+<button onclick="kiemtra()">Click !</button>
+<script>
+    function kiemtra() {
+        let a = document.getElementById("so1").value;
+        let b = document.getElementById("so2").value;
+        let c = document.getElementById("so3").value;
+        if (a > b && b > c) {
+            alert(c);
+        } else if (a > b && c > b) {
+            alert(b);
+        } else if (b > a && c > a) {
+            alert(a);
+        } else {
+            alert("3 so phai co gia tri khac nhau ");
+        }
+    }
+
+</script>
+</body>
+</html>

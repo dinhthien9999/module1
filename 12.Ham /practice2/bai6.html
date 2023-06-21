@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for ="nhapso">Nhap so :</label>
+<input id ="nhapso" type="text">
+<button onclick="kiemtra()">Click me !</button>
+<script>
+  function kiemtra(){
+    let a =document.getElementById("nhapso").value;
+    if (a >0){
+      alert("True .la so nguyen duong");
+    }
+    else if (a<0){
+      alert ("False.La so nguyen am ");
+    }
+    else {
+      alert("la so 0 ")
+    }
+  }
+</script>
+</body>
+</html>

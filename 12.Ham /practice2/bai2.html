@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div>
+    <p >Tinh Chu Vi Hinh Tron</p>
+    <label for ="nhapchuvi ">Ban kinh :</label>
+    <input id ="nhapchuvi " type ="text">
+    <button onclick ="chuvi()">Chu vi :</button>
+</div>
+<div>
+    <p>Tinh dien tich hinh tron </p>
+<label for ="nhapdientich">Ban kinh :</label>
+    <input id ="nhapdientich" type ="text">
+    <button onclick =dientich()>Dien tich :</button>
+</div>
+<script>
+    function chuvi(){
+        let r = document.getElementById("nhapchuvi ").value ;
+        let v =(r*2)*3.14;
+        alert(v);
+    }
+    function dientich(){
+        let r = document.getElementById("nhapdientich  ").value ;
+        let s = 3.14 * r *r ;
+        alert(s);
+    }
+</script>
+
+</body>
+</html>
